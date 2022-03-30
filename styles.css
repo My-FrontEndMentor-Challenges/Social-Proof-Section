@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+.grid-container {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  font-family: "Spartan", sans-serif;
+}
+
+/* left section */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 1rem;
+}
+.left-section h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3rem;
+}
+.left-section p {
+  color: hsl(300, 43%, 22%);
+  padding-right: 2rem;
+  line-height: 1.8;
+}
+
+/* rating section */
+.ratings-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin: 0 1rem;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem 1.5rem;
+  width: 450px;
+  margin: 0.5rem 0;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.rating-1 {
+  margin-right: 6rem;
+}
+.rating-2 {
+  margin-right: 3rem;
+}
+.stars {
+  margin-right: 1rem;
+}
+
+/* reviews section */
+.reviews-section {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(300, 43%, 22%);
+  margin: 0 1rem;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+}
+.review:nth-child(2) {
+  margin-top: 2rem;
+}
+.review:nth-child(3) {
+  margin-top: 4rem;
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+}
+.reviewer img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  height: 50px;
+}
+.reviewer-info {
+  font-weight: 500;
+}
+.reviewer-name {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.2rem;
+}
+.vertified-buyer {
+  color: hsl(333, 80%, 67%);
+}
+.review-text {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  line-height: 2;
+  margin-top: 2rem;
+}
